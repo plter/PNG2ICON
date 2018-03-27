@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PNG2ICO</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+
+    <style>
+        .image-box {
+            display: flex;
+            flex-direction: column;
+            width: 80px;
+            padding: 3px;
+        }
+
+        .image-box .image {
+            width: 100%;
+            height: 72px;
+            border-style: dashed;
+            border-radius: 3px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 72px;
+        }
+
+        .image-box .image-label {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        window.jQuery = window.$ = require("jquery");
+        require("bootstrap");
+    </script>
+</head>
+<body style="margin: 0;">
+<div id="root" style="display: flex;flex-direction: column;padding: 10px;">
+    <div style="flex-direction: row;display: flex;">
+        <div class="image-box">
+            <div class="image">选择</div>
+            <div class="image-label">16x16</div>
+            <input type="file" accept="image/png" class="file-field" style="display: none;">
+        </div>
+        <div style="flex: 1"></div>
+        <div class="image-box">
+            <div class="image">选择</div>
+            <div class="image-label">24x24</div>
+            <input type="file" accept="image/png" class="file-field" style="display: none;">
+        </div>
+        <div style="flex: 1"></div>
+        <div class="image-box">
+            <div class="image">选择</div>
+            <div class="image-label">32x32</div>
+            <input type="file" accept="image/png" class="file-field" style="display: none;">
+        </div>
+        <div style="flex: 1"></div>
+        <div class="image-box">
+            <div class="image">选择</div>
+            <div class="image-label">48x48</div>
+            <input type="file" accept="image/png" class="file-field" style="display: none;">
+        </div>
+        <div style="flex: 1"></div>
+        <div class="image-box">
+            <div class="image">选择</div>
+            <div class="image-label">64x64</div>
+            <input type="file" accept="image/png" class="file-field" style="display: none;">
+        </div>
+        <div style="flex: 1"></div>
+        <div class="image-box">
+            <div class="image">选择</div>
+            <div class="image-label">128x128</div>
+            <input type="file" accept="image/png" class="file-field" style="display: none;">
+        </div>
+        <div style="flex: 1"></div>
+        <div class="image-box">
+            <div class="image">选择</div>
+            <div class="image-label">256x256</div>
+            <input type="file" accept="image/png" class="file-field" style="display: none;">
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <button class="btn btn-primary" id="btn-convert">转换</button>
+    </div>
+</div>
+
+<script>
+    require("./renderer");
+</script>
+</body>
+</html>

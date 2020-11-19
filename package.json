@@ -1,7 +1,8 @@
 {
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "install_dependencies": "npm install --registry=https://registry.npm.taobao.org"
   },
   "devDependencies": {
     "electron": "^1.8.4"

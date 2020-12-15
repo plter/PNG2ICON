@@ -5,7 +5,7 @@
     "install_dependencies": "npm install --registry=https://registry.npm.taobao.org"
   },
   "devDependencies": {
-    "electron": "^1.8.4"
+    "electron": "^7.2.4"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
